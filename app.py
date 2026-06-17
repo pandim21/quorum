@@ -171,6 +171,12 @@ def bullets(items) -> str:
     return "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in items if x) + "</ul>"
 
 
+def para(s) -> str:
+    """Escaped free text with the source's own line breaks kept as <br>.
+    No-op when there are no newlines, so it can't change single-line fields."""
+    return esc(s).replace("\n", "<br>")
+
+
 # --------------------------------------------------------- structured reply body
 def reply_body(name: str, d: dict) -> str:
     # Auditor
@@ -179,7 +185,7 @@ def reply_body(name: str, d: dict) -> str:
         if d.get("findings"):
             h += f'<div class="subh">Checks</div>{bullets(d["findings"])}'
         if d.get("one_line"):
-            h += f'<div style="margin-top:7px" class="kv">{esc(d["one_line"])}</div>'
+            h += f'<div style="margin-top:7px" class="kv">{para(d["one_line"])}</div>'
         return h
     # Risk Officer
     if "compliance_status" in d:
@@ -202,7 +208,7 @@ def reply_body(name: str, d: dict) -> str:
              f'<span class="kv" style="margin-left:14px"><b>Stronger side:</b> {esc(side)}</span>')
         factor = d.get("single_most_decisive_factor") or d.get("why", "")
         if factor:
-            h += f'<div class="subh">Decisive factor</div><div class="kv">{esc(factor)}</div>'
+            h += f'<div class="subh">Decisive factor</div><div class="kv">{para(factor)}</div>'
         return h
     # Bull / Bear
     if "conviction" in d:
@@ -215,7 +221,7 @@ def reply_body(name: str, d: dict) -> str:
             h += f'<div class="subh">Red flags</div>{bullets(d["red_flags"])}'
         reb = d.get("rebuttal_of_bear") or d.get("rebuttal_of_bull")
         if reb:
-            h += f'<div class="subh">Rebuttal</div><div class="kv">{esc(reb)}</div>'
+            h += f'<div class="subh">Rebuttal</div><div class="kv">{para(reb)}</div>'
         h += f'<div style="margin-top:9px" class="kv"><b>Conviction</b> &nbsp; {dots(d["conviction"])} &nbsp; {esc(d["conviction"])}/5</div>'
         return h
     # Specialist (export / valuation / forensic)
@@ -229,7 +235,7 @@ def reply_body(name: str, d: dict) -> str:
         if d.get("fair_value_bias"):
             h += f'<div class="kv" style="margin-top:6px"><b>Fair-value bias:</b> {esc(d["fair_value_bias"])}</div>'
         if d.get("assessment"):
-            h += f'<div class="subh">Assessment</div><div class="kv">{esc(d["assessment"])}</div>'
+            h += f'<div class="subh">Assessment</div><div class="kv">{para(d["assessment"])}</div>'
         if d.get("mitigations"):
             h += f'<div class="subh">Mitigations</div>{bullets(d["mitigations"])}'
         impact = d.get("position_impact") or (f'ceiling {d["sizing_ceiling_pct"]}%' if d.get("sizing_ceiling_pct") else "")
