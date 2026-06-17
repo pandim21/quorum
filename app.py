@@ -120,11 +120,16 @@ header[data-testid="stHeader"] { background: transparent; }
 
 # ----------------------------------------------------------------- small helpers
 def esc(s) -> str:
+    if s is None:
+        return ""
     # quote=False: our output only ever lands in element bodies, never in HTML
     # attributes — so leave ' and " as literal chars. Escaping them to numeric
     # entities (&#x27;) makes Streamlit's markdown re-encode the '&' and show the
     # raw entity. unescape() first keeps it idempotent if a source is pre-escaped.
-    return html.escape(html.unescape(str(s)), quote=False) if s is not None else ""
+    out = html.escape(html.unescape(str(s)), quote=False)
+    # \$ stops Streamlit's markdown from pairing dollar signs into LaTeX math
+    # (e.g. "$0.9B … $1.3B" was being math-typeset into squished italics).
+    return out.replace("$", "\\$")
 
 
 def money_bn(x) -> str:
