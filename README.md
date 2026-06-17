@@ -7,7 +7,7 @@
 
 | | |
 |---|---|
-| ▶ **Interactive demo** | `<DEPLOYED_APP_URL>` *(replay terminal — no keys, can't drain credits)* |
+| ▶ **Interactive demo** | **[quorum-ai.streamlit.app](https://quorum-ai.streamlit.app/)** *(replay terminal — no keys, can't drain credits)* |
 | 🎬 **Demo video** | `<VIDEO_URL>` |
 | 📊 **Pitch deck** | `<DECK_URL>` |
 
