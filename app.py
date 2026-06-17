@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 from pathlib import Path
 
 import streamlit as st
@@ -122,14 +123,14 @@ header[data-testid="stHeader"] { background: transparent; }
 def esc(s) -> str:
     if s is None:
         return ""
-    # quote=False: our output only ever lands in element bodies, never in HTML
-    # attributes — so leave ' and " as literal chars. Escaping them to numeric
-    # entities (&#x27;) makes Streamlit's markdown re-encode the '&' and show the
-    # raw entity. unescape() first keeps it idempotent if a source is pre-escaped.
+    # Cards are emitted via st.html (NOT st.markdown), so Streamlit runs NO
+    # markdown/LaTeX pass — '$', "'", and entities all render literally and
+    # there is nothing to mangle. quote=False keeps quotes as literal chars;
+    # unescape() first makes this idempotent if a source is already escaped.
     out = html.escape(html.unescape(str(s)), quote=False)
-    # \$ stops Streamlit's markdown from pairing dollar signs into LaTeX math
-    # (e.g. "$0.9B … $1.3B" was being math-typeset into squished italics).
-    return out.replace("$", "\\$")
+    # st.html won't turn **bold** into bold for us, so do it ourselves
+    # (paired only — an unpaired ** is left as a literal).
+    return re.sub(r"\*\*([^*\n]+?)\*\*", r"<b>\1</b>", out)
 
 
 def money_bn(x) -> str:
@@ -303,11 +304,10 @@ def render_turn(t: dict, is_last: bool = False):
     else:
         body = f'<div class="cbody">{esc(t["prose"])}</div>'
 
-    st.markdown(f"""
-<div class="turn{' last' if is_last else ''}"><div class="rail"><div class="node" style="background:{color}">{esc(short)}</div></div>
-<div class="{cls}"><div class="chead"><span class="who">{esc(who)}</span>{chips}{to}
-<span class="t">{esc(t["time"])}</span></div>{body}</div></div>
-""", unsafe_allow_html=True)
+    return (f'<div class="turn{" last" if is_last else ""}"><div class="rail">'
+            f'<div class="node" style="background:{color}">{esc(short)}</div></div>'
+            f'<div class="{cls}"><div class="chead"><span class="who">{esc(who)}</span>{chips}{to}'
+            f'<span class="t">{esc(t["time"])}</span></div>{body}</div></div>')
 
 
 # --------------------------------------------------------------------------- app
@@ -374,8 +374,8 @@ def render_case(v: dict):
 
     st.markdown('<div class="seclabel">Committee proceedings</div>'
                 '<div class="hint">Every handoff is a real agent-to-agent message routed through Band — gather → debate → risk gate → self-assembled specialists → escalation → independent audit → human sign-off.</div>', unsafe_allow_html=True)
-    for idx, t in enumerate(v["turns"]):
-        render_turn(t, is_last=(idx == len(v["turns"]) - 1))
+    n = len(v["turns"])
+    st.html("".join(render_turn(t, is_last=(i == n - 1)) for i, t in enumerate(v["turns"])))
 
 
 def main():
