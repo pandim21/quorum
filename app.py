@@ -120,7 +120,11 @@ header[data-testid="stHeader"] { background: transparent; }
 
 # ----------------------------------------------------------------- small helpers
 def esc(s) -> str:
-    return html.escape(str(s)) if s is not None else ""
+    # quote=False: our output only ever lands in element bodies, never in HTML
+    # attributes — so leave ' and " as literal chars. Escaping them to numeric
+    # entities (&#x27;) makes Streamlit's markdown re-encode the '&' and show the
+    # raw entity. unescape() first keeps it idempotent if a source is pre-escaped.
+    return html.escape(html.unescape(str(s)), quote=False) if s is not None else ""
 
 
 def money_bn(x) -> str:
