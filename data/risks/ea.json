@@ -1,0 +1,21 @@
+{
+  "_note": "Curated structural-risk dossier for EA, merged over LIVE financials by company_data.py. Earnings-quality / revenue-recognition is framed as the dominant, directionally-CAUTIONARY risk (the genuine forensic concern for a live-service publisher) so a HIGH flag is plausible and the Forensic Accounting Analyst is recruited. NOTE: an earlier version led with the GAAP net income ($0.9B) vs FCF ($2.2B) gap — but FCF exceeding GAAP reads BULLISH (conservative accounting), and the Bull flipped it into a pro-EA point, so the Risk Officer rated it only medium. This version reframes the concern so it points against the stock (reported growth may overstate underlying bookings; headline FCF is flattered by SBC add-backs). Concerns are documented and neutrally phrased — they describe estimate-dependence and normalization risk, NOT impropriety. Valuation is left moderate on purpose (EA's ~21x fwd P/E is not stretched) so the Valuation Specialist does not also fire. Refresh as facts change.",
+  "recent_developments": [
+    {
+      "headline": "Reported revenue growth may be outpacing underlying net bookings",
+      "so_what": "EA recognizes live-service and online-enabled revenue over an estimated service period and reports non-GAAP 'net bookings' as the cash measure of demand. Reported GAAP growth can be flattered when prior-period deferred balances are recognized faster than new bookings are added, so the 11.9% headline may overstate underlying demand if net bookings are growing more slowly — a core earnings-quality question that needs independent review before trusting the multiples."
+    },
+    {
+      "headline": "Headline free cash flow is flattered by stock-based compensation and working-capital timing",
+      "so_what": "The $2.2B FCF adds back sizable non-cash stock-based compensation — a real, recurring economic cost — and benefits from deferred-revenue and working-capital timing. Owner earnings net of SBC are materially lower, so the claim that 'FCF is the true earnings power' overstates the case and warrants a normalized look."
+    },
+    {
+      "headline": "Revenue recognition hinges on discretionary estimates of live-service periods",
+      "so_what": "Management chooses the estimated period over which online-enabled and live-service revenue is recognized; a change in that estimate can pull revenue and margins forward between periods. This is a discretionary accounting lever that warrants independent scrutiny rather than being taken at face value."
+    },
+    {
+      "headline": "Bookings concentrated in a few franchises (EA Sports FC, Madden, Apex Legends, The Sims)",
+      "so_what": "A handful of annual and live-service franchises drive most bookings, so a weak release or a fading title can swing results — concentration that amplifies the estimate-driven revenue-recognition risk above."
+    }
+  ]
+}

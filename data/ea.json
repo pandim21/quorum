@@ -1,0 +1,58 @@
+{
+  "ticker": "EA",
+  "company": "Electronic Arts Inc.",
+  "source": "Yahoo Finance (yfinance) + curated risk dossier",
+  "fetched_at": "2026-06-16T23:09:04Z",
+  "snapshot": {
+    "sub_industry": "Electronic Gaming & Multimedia",
+    "market_cap_usd_bn": 50.9,
+    "fwd_pe": 21.1
+  },
+  "key_financials": {
+    "revenue_ttm_usd_bn": 7.5,
+    "revenue_growth_yoy_pct": 11.9,
+    "gross_margin_pct": 79.0,
+    "operating_margin_pct": 24.0,
+    "net_income_ttm_usd_bn": 0.9,
+    "fcf_ttm_usd_bn": 2.2,
+    "net_debt_usd_bn": -1.1,
+    "ev_ebitda": 33.5
+  },
+  "recent_developments": [
+    {
+      "headline": "Reported revenue growth may be outpacing underlying net bookings",
+      "so_what": "EA recognizes live-service and online-enabled revenue over an estimated service period and reports non-GAAP 'net bookings' as the cash measure of demand. Reported GAAP growth can be flattered when prior-period deferred balances are recognized faster than new bookings are added, so the 11.9% headline may overstate underlying demand if net bookings are growing more slowly \u2014 a core earnings-quality question that needs independent review before trusting the multiples."
+    },
+    {
+      "headline": "Headline free cash flow is flattered by stock-based compensation and working-capital timing",
+      "so_what": "The $2.2B FCF adds back sizable non-cash stock-based compensation \u2014 a real, recurring economic cost \u2014 and benefits from deferred-revenue and working-capital timing. Owner earnings net of SBC are materially lower, so the claim that 'FCF is the true earnings power' overstates the case and warrants a normalized look."
+    },
+    {
+      "headline": "Revenue recognition hinges on discretionary estimates of live-service periods",
+      "so_what": "Management chooses the estimated period over which online-enabled and live-service revenue is recognized; a change in that estimate can pull revenue and margins forward between periods. This is a discretionary accounting lever that warrants independent scrutiny rather than being taken at face value."
+    },
+    {
+      "headline": "Bookings concentrated in a few franchises (EA Sports FC, Madden, Apex Legends, The Sims)",
+      "so_what": "A handful of annual and live-service franchises drive most bookings, so a weak release or a fading title can swing results \u2014 concentration that amplifies the estimate-driven revenue-recognition risk above."
+    }
+  ],
+  "data_gaps": [],
+  "live_headlines": [
+    {
+      "headline": "Electronic Arts (EA) Shows Why Its $55 Billion Buyout Case Rests on More Than Deal Momentum",
+      "so_what": "Electronic Arts Inc. (NASDAQ:EA) is one of the best e-gaming and sports betting stocks to buy now. The company\u2019s clearest investor story is its pending $55 billion take-private transaction, which has turned EA into a deal-driven gaming stoc"
+    },
+    {
+      "headline": "3 Profitable Stocks We Keep Off Our Radar",
+      "so_what": "While profitability is essential, it doesn\u2019t guarantee long-term success. Some companies that rest on their margins will lose ground as competition intensifies \u2014 as Jeff Bezos said, \u201cYour margin is my opportunity\u201d."
+    },
+    {
+      "headline": "Electronic Arts Unveils New Advertising Platform for In-Game Brand Activations (EA)",
+      "so_what": "Electronic Arts Inc. (NASDAQ:EA) has introduced EA Advertising, a new platform designed to allow brands to connect directly with players through integrated advertising experiences across the company\u2019s gaming ecosystem."
+    },
+    {
+      "headline": "Is Electronic Arts Stock Outperforming the Dow?",
+      "so_what": "While Electronic Arts has outperformed relative to the Dow over the past year, Wall Street analysts maintain a cautious outlook on the stock\u2019s prospects."
+    }
+  ]
+}

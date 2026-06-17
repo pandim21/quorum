@@ -1,0 +1,58 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA Corporation",
+  "source": "Yahoo Finance (yfinance) + curated risk dossier",
+  "fetched_at": "2026-06-15T22:38:08Z",
+  "snapshot": {
+    "sub_industry": "Semiconductors",
+    "market_cap_usd_bn": 5145.8,
+    "fwd_pe": 16.7
+  },
+  "key_financials": {
+    "revenue_ttm_usd_bn": 253.5,
+    "revenue_growth_yoy_pct": 85.2,
+    "gross_margin_pct": 74.1,
+    "operating_margin_pct": 65.6,
+    "net_income_ttm_usd_bn": 159.6,
+    "fcf_ttm_usd_bn": 46.3,
+    "net_debt_usd_bn": -40.4,
+    "ev_ebitda": 29.8
+  },
+  "recent_developments": [
+    {
+      "headline": "U.S. export controls restrict advanced-GPU sales to China",
+      "so_what": "Caps a material slice of data-center demand and can be tightened further \u2014 a key risk to growth durability."
+    },
+    {
+      "headline": "Revenue concentrated in a few hyperscaler customers",
+      "so_what": "A handful of buyers drive most data-center revenue; demand could be lumpy or pulled forward."
+    },
+    {
+      "headline": "Rising competition: AMD GPUs and hyperscaler custom ASICs (TPU, Trainium)",
+      "so_what": "Threatens long-run pricing power and the CUDA moat at the margin."
+    },
+    {
+      "headline": "Next-generation (Blackwell) product ramp underway",
+      "so_what": "Supports forward growth but adds execution and supply-chain risk."
+    }
+  ],
+  "data_gaps": [],
+  "live_headlines": [
+    {
+      "headline": "How SpaceX's IPO made millions for JPMorgan, Goldman Sachs, & other big banks",
+      "so_what": "Yahoo Finance Senior Reporter David Hollerith explains how SpaceX's (SPCX) initial public offering (IPO) is fueling Morgan Stanley (MS), Goldman Sachs (GS), JPMorgan (JPM), Bank of America (BAC), and Citi (C)."
+    },
+    {
+      "headline": "Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them",
+      "so_what": "Watch this one key metric on the \"Magnificent Seven\" names."
+    },
+    {
+      "headline": "Forget Micron: 1 Record-Breaking Cloud Powerhouse to Buy Hand Over Fist After the Pullback",
+      "so_what": "Micron Technology (NASDAQ:MU) is the chip stock dominating every feed after its memory business rode the AI cycle to a $1.12 trillion market cap and a 760.37% one-year run. But here\u2019s what you should actually be watching. The Crowded Trade "
+    },
+    {
+      "headline": "PowerFleet, Inc. Q4 2026 Earnings Call Summary",
+      "so_what": "Moby summary of PowerFleet, Inc.'s Q4 2026 earnings call"
+    }
+  ]
+}

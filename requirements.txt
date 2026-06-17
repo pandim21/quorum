@@ -1,0 +1,5 @@
+# Dependencies for the Quorum REPLAY DEMO only (app.py).
+# The live committee uses pyproject.toml / uv (band-sdk, langgraph, etc.).
+# The replay app reads committed transcripts and makes ZERO API calls,
+# so it needs no keys and nothing from the agent stack.
+streamlit>=1.40

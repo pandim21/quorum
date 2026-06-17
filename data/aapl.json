@@ -1,0 +1,58 @@
+{
+  "ticker": "AAPL",
+  "company": "Apple Inc.",
+  "source": "Yahoo Finance (yfinance) + curated risk dossier",
+  "fetched_at": "2026-06-16T03:57:41Z",
+  "snapshot": {
+    "sub_industry": "Consumer Electronics",
+    "market_cap_usd_bn": 4353.6,
+    "fwd_pe": 30.9
+  },
+  "key_financials": {
+    "revenue_ttm_usd_bn": 451.4,
+    "revenue_growth_yoy_pct": 16.6,
+    "gross_margin_pct": 47.9,
+    "operating_margin_pct": 32.3,
+    "net_income_ttm_usd_bn": 122.6,
+    "fcf_ttm_usd_bn": 101.1,
+    "net_debt_usd_bn": 16.2,
+    "ev_ebitda": 27.3
+  },
+  "recent_developments": [
+    {
+      "headline": "Premium valuation: ~30x forward earnings on a $4.3T base leaves the return dominated by multiple persistence",
+      "so_what": "At ~30x forward P/E and ~27x EV/EBITDA, the market prices in durable premium growth on the largest company in the world. The law of large numbers makes sustaining mid-teens growth on a $451B revenue base progressively harder, so a reversion toward a market multiple would drive a large drawdown independent of business quality. Multiple compression \u2014 not the business \u2014 is the dominant, decision-relevant risk, and warrants a dedicated valuation review before sizing."
+    },
+    {
+      "headline": "Per-share growth is flattered by very large buybacks",
+      "so_what": "Apple repurchases roughly $80-90B of stock annually, so reported EPS growth runs ahead of underlying net-income growth. The premium multiple should be judged against organic growth, not buyback-boosted EPS, or the entry looks cheaper than it is."
+    },
+    {
+      "headline": "Value concentrated in iPhone; Services is the key growth swing",
+      "so_what": "iPhone still drives the majority of revenue and gross profit, and the premium multiple leans on Services continuing to grow faster than hardware. A hardware stumble or a Services deceleration would pressure both growth and the multiple at the same time."
+    },
+    {
+      "headline": "Elite cash generation is real but already in the price",
+      "so_what": "~$101B annual free cash flow and ~48% gross margins anchor the quality case, but at ~30x earnings that quality is largely reflected \u2014 it provides little valuation cushion if growth normalizes."
+    }
+  ],
+  "data_gaps": [],
+  "live_headlines": [
+    {
+      "headline": "Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them",
+      "so_what": "Watch this one key metric on the \"Magnificent Seven\" names."
+    },
+    {
+      "headline": "SpaceX Market Cap Breaches $2.5 Trillion: Goes Past Tesla, TSMC And Broadcom",
+      "so_what": "SpaceX stock jumped close to 20% on Monday, hitting a market cap of $2.52 trillion, outshining TSMC."
+    },
+    {
+      "headline": "Standard Chartered Says UNI Could Hit $100 as Wall Street Moves Onchain",
+      "so_what": "Standard Chartered has opened coverage of Uniswap with one of the most aggressive Wall Street forecasts yet for a m..."
+    },
+    {
+      "headline": "With Roku Stock Near Highs, Is It Worth It?",
+      "so_what": "The streaming giant's high-margin advertising business is firing on all cylinders, but you have to weigh that against a money-losing device segment and a premium price tag."
+    }
+  ]
+}

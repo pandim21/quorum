@@ -1,0 +1,21 @@
+{
+  "_note": "Curated structural-risk dossier, merged over LIVE financials by company_data.py. Themes are documented and widely reported; neutral phrasing; refresh as facts change.",
+  "recent_developments": [
+    {
+      "headline": "U.S. export controls restrict advanced-GPU sales to China",
+      "so_what": "Caps a material slice of data-center demand and can be tightened further — a key risk to growth durability."
+    },
+    {
+      "headline": "Revenue concentrated in a few hyperscaler customers",
+      "so_what": "A handful of buyers drive most data-center revenue; demand could be lumpy or pulled forward."
+    },
+    {
+      "headline": "Rising competition: AMD GPUs and hyperscaler custom ASICs (TPU, Trainium)",
+      "so_what": "Threatens long-run pricing power and the CUDA moat at the margin."
+    },
+    {
+      "headline": "Next-generation (Blackwell) product ramp underway",
+      "so_what": "Supports forward growth but adds execution and supply-chain risk."
+    }
+  ]
+}
