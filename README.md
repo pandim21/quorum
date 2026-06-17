@@ -3,7 +3,7 @@
 **Quorum replaces the slow, coordination-heavy investment-committee process with a team of specialist AI agents that gather research, debate bull-vs-bear, pass a risk & compliance gate, recruit the right expert for the risk at hand, escalate deadlocks, and submit the decision for an independent audit — all coordinated agent-to-agent through [Band](https://band.ai), with a human approving the final call.**
 
 > Built solo for the lablab.ai **Band of Agents Hackathon** (June 2026) · **Track 3: Regulated & High-Stakes Workflows**.
-> *Illustrative demo — not investment advice.*
+> *Illustrative demo. Financial figures are fixed, bundled snapshots as of 16 June 2026, 4:00 PM ET — not live market data, not investment advice.*
 
 | | |
 |---|---|
@@ -243,4 +243,4 @@ Python · [Band SDK 1.0](https://band.ai) (LangGraph adapter) · AI/ML API (Open
 
 ---
 
-*Quorum is an illustrative demonstration of a multi-agent governance workflow. It is not investment advice and produces no real orders.*
+*Quorum is an illustrative demonstration of a multi-agent governance workflow. Financial figures are fixed, bundled snapshots as of 16 June 2026, 4:00 PM ET — not live market data. It is not investment advice and produces no real orders.*
