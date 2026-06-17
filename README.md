@@ -25,7 +25,7 @@ Three real runs ship with the demo:
 |---|---|---|---|---|---|
 | **NVDA** | Export-control exposure | Export Controls Analyst | — | ✅ pass | **BUY** · 8% |
 | **EA** | Earnings-quality / revenue recognition | Forensic Accounting Analyst | CRO tie-break | ✅ pass | **BUY** · 6% |
-| **AAPL** | Premium valuation (~30× fwd P/E) | Valuation Specialist | CRO tie-break | ✅ pass | **HOLD** |
+| **AAPL** | Premium valuation (≈30× fwd P/E) | Valuation Specialist | CRO tie-break | ✅ pass | **HOLD** |
 
 ---
 
@@ -168,7 +168,7 @@ Investment committees and equity-research desks run the review-and-decide loop b
 
 **Why now — regulation creates the market for decision provenance.** Under the **EU AI Act** (traceability for high-risk AI) and **SEC/FINRA recordkeeping** (e.g. SEC Rule 17a-4), the decision audit trail is a *legally required* artifact. Quorum emits it automatically — turning compliance documentation from a manual chore into a byproduct.
 
-**Market (cited, conservative anchors).** Quorum sells into the **investment-management software** market — ~$4.9B in 2025 growing ~11–12% to ~$8.5B by 2030 — expanded by the **AI-in-asset-management** (~$3.8B, ~24% CAGR) and **RegTech** (~$16B+, ~20% CAGR) markets that map to its decision-quality and compliance value props. Serviceable base: **16,544 SEC-registered RIA firms managing $176.8T (2025)**, plus hedge funds, pensions, endowments, and family offices.
+**Market (cited, conservative anchors).** Quorum sells into the **investment-management software** market — ≈$4.9B in 2025 growing ≈11–12% to ≈$8.5B by 2030 — expanded by the **AI-in-asset-management** (≈$3.8B, ≈24% CAGR) and **RegTech** (≈$16B+, ≈20% CAGR) markets that map to its decision-quality and compliance value props. Serviceable base: **16,544 SEC-registered RIA firms managing $176.8T (2025)**, plus hedge funds, pensions, endowments, and family offices.
 
 **Revenue model:** seat SaaS + per-decision usage + a premium **compliance tier** (the retained audit trail) — the stickiest layer, because it maps to a regulatory obligation rather than a preference.
 
@@ -207,10 +207,11 @@ Pick NVDA / EA / AAPL and step through the committee.
 
 **Reproduce a live committee on Band** (your own keys):
 ```powershell
-copy .env.example .env        # add AI/ML API + Featherless keys
-# Register the 10 agents at app.band.ai/agents; paste creds into agent_config.yaml
-uv run python run_all.py      # launches all 10 agents in one process
+copy .env.example .env                            # add your AI/ML API + Featherless keys
+copy agent_config.example.yaml agent_config.yaml  # then fill in each agent's id + key
+uv run python run_all.py                          # launches all 10 agents in one process
 ```
+Register the 10 agents at [app.band.ai/agents](https://app.band.ai/agents) → *New Agent → External Agent*, using the **exact display names** listed in [`agent_config.example.yaml`](agent_config.example.yaml); copy each agent's UUID and API key into your `agent_config.yaml`.
 Then in a Band room, add the standing roster and send:
 `@Portfolio Manager convene the committee to evaluate NVDA for the Northwind Tech Growth Fund.`
 The PM recruits the specialist / CRO / auditor from there. Approve with `@Portfolio Manager approve`.
@@ -219,7 +220,7 @@ The PM recruits the specialist / CRO / auditor from there. Approve with `@Portfo
 
 ## The demo scenario
 
-**Northwind Tech Growth Fund** — long-only, GARP, 5–10% target position, **max 10% single name / 35% sub-industry**, valuation flag above ~40× forward P/E. Tickers chosen to exercise different paths: **NVDA** (export-control risk), **EA** (earnings-quality risk + deadlock), **AAPL** (valuation risk + deadlock).
+**Northwind Tech Growth Fund** — long-only, GARP, 5–10% target position, **max 10% single name / 35% sub-industry**, valuation flag above ≈40× forward P/E. Tickers chosen to exercise different paths: **NVDA** (export-control risk), **EA** (earnings-quality risk + deadlock), **AAPL** (valuation risk + deadlock).
 
 ## Repo layout
 

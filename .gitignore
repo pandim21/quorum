@@ -15,3 +15,8 @@ agent_config.yaml
 
 # Runtime artifacts
 live/
+
+# Deck / QA build artifacts
+deckbuild/
+docs/slides/
+docs/*.pdf

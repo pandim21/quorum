@@ -1,0 +1,49 @@
+# ── Band credentials for each committee member ──────────────────────────────
+# Copy this file to  agent_config.yaml  and fill in the two values per role.
+#
+# For each role below: go to https://app.band.ai/agents → New Agent → External
+# Agent, create it using EXACTLY the display name shown in the comment, then copy
+# the agent's UUID into `agent_id` and its API key into `api_key`.
+#
+# agent_config.yaml is git-ignored — never commit real keys. This .example file
+# (placeholders only) is the safe-to-commit template.
+
+portfolio_manager:            # display name: Portfolio Manager
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+research_analyst:             # display name: Research Analyst
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+bull_analyst:                 # display name: Bull Analyst
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+bear_analyst:                 # display name: Bear Analyst
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+risk_officer:                 # display name: Risk Officer
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+chief_risk_officer:           # display name: Chief Risk Officer
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+export_controls_analyst:      # display name: Export Controls Analyst
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+valuation_specialist:         # display name: Valuation Specialist
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+forensic_accounting_analyst:  # display name: Forensic Accounting Analyst
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
+
+independent_auditor:          # display name: Independent Auditor
+  agent_id: "YOUR_AGENT_UUID"
+  api_key: "band_a_YOUR_API_KEY"
