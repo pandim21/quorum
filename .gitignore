@@ -21,4 +21,5 @@ deckbuild/
 docs/slides/
 docs/slides2/
 docs/*.pdf
+!docs/Quorum-Deck.pdf
 docs/Quorum-Deck.pptx
