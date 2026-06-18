@@ -16,7 +16,9 @@ agent_config.yaml
 # Runtime artifacts
 live/
 
-# Deck / QA build artifacts
+# Deck / QA build artifacts (deck is uploaded to lablab directly, not committed)
 deckbuild/
 docs/slides/
+docs/slides2/
 docs/*.pdf
+docs/Quorum-Deck.pptx
