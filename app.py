@@ -340,7 +340,7 @@ def _sidebar() -> None:
         st.markdown("---")
         st.markdown('<div class="subh" style="margin-top:0">How it works</div>'
                     '<div style="font-size:12px;color:#33425A;line-height:1.6">A committee that <b>rewrites its own membership</b> from its risk findings, <b>governs</b> the decision with an enforceable gate + human sign-off, and <b>audits</b> itself — coordinated agent-to-agent through <b>Band</b>.</div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-size:10.5px;color:#9AA8BC;margin-top:16px;line-height:1.5">Illustrative demo. Financial data are fixed snapshots from 15–16 June 2026 — not live market data, not investment advice.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:10.5px;color:#9AA8BC;margin-top:16px;line-height:1.5">Live fundamentals via Yahoo Finance (cached for resilience). This replay shows committed snapshots from committee runs on 15–16 June 2026. Illustrative — not investment advice.</div>', unsafe_allow_html=True)
 
 
 def render_case(v: dict):

@@ -3,7 +3,7 @@
 **Quorum replaces the slow, coordination-heavy investment-committee process with a team of specialist AI agents that gather research, debate bull-vs-bear, pass a risk & compliance gate, recruit the right expert for the risk at hand, escalate deadlocks, and submit the decision for an independent audit — all coordinated agent-to-agent through [Band](https://band.ai), with a human approving the final call.**
 
 > Built solo for the lablab.ai **Band of Agents Hackathon** (June 2026) · **Track 3: Regulated & High-Stakes Workflows**.
-> *Illustrative demo. Financial figures are fixed, bundled snapshots from 15–16 June 2026 — not live market data, not investment advice.*
+> *Illustrative demo — not investment advice. Quorum pulls live fundamentals from Yahoo Finance at run time (cached for resilience); this replay shows committed snapshots from committee runs on 15–16 June 2026.*
 
 | | |
 |---|---|
@@ -44,7 +44,7 @@ Band is the **only** channel the agents share. There is no orchestration bus, no
 | Seat | Role | Model | Vendor (via) |
 |---|---|---|---|
 | **Portfolio Manager** (Chair) | Orchestrates the meeting, weighs debate + risk, makes the call | GPT-5.2 | OpenAI · AI/ML API |
-| **Research Analyst** | Builds the neutral case file from the data packet | Qwen2.5-72B | **Featherless** (open weights) |
+| **Research Analyst** | Builds the neutral case file from live Yahoo Finance data | Qwen2.5-72B | **Featherless** (open weights) |
 | **Bull Analyst** | Strongest case *to invest*; must rebut the bear | DeepSeek-V4 | DeepSeek · AI/ML API |
 | **Bear Analyst** | Strongest case *against*; must rebut the bull | Grok-4 | xAI · AI/ML API |
 | **Risk Officer** | Compliance gate + position limits; flags risk severity | o3 | OpenAI · AI/ML API |
@@ -229,8 +229,8 @@ The PM recruits the specialist / CRO / auditor from there. Approve with `@Portfo
 | `prompts.py` | All ten role prompts + the PM's meeting protocol; the `ROLES` model fleet |
 | `committee.py` | Per-agent entrypoint + adapter wiring |
 | `reliable_adapter.py` | `ReliableLangGraphAdapter` — retries empty turns so a meeting never silently stalls |
-| `company_data.py` | The `get_company_data` tool (bundled deterministic packets) |
-| `data/*.json`, `data/risks/*.json` | Company financials + the risk packet that drives self-assembly |
+| `company_data.py` | The `get_company_data` tool — live Yahoo Finance fundamentals, cached to `data/` as a fallback |
+| `data/*.json`, `data/risks/*.json` | Cached financial snapshots + the curated risk dossier that drives self-assembly |
 | `run_all.py` / `start_all.ps1` | Launch all agents (one process / one window each) |
 | `app.py` | Streamlit replay terminal |
 | `replay_data.py` | Parses Band room exports into the render model |
@@ -243,4 +243,4 @@ Python · [Band SDK 1.0](https://band.ai) (LangGraph adapter) · AI/ML API (Open
 
 ---
 
-*Quorum is an illustrative demonstration of a multi-agent governance workflow. Financial figures are fixed, bundled snapshots from 15–16 June 2026 — not live market data. It is not investment advice and produces no real orders.*
+*Quorum is an illustrative demonstration of a multi-agent governance workflow. It pulls live fundamentals from Yahoo Finance at run time (cached for resilience); this replay shows committed snapshots from committee runs on 15–16 June 2026. It is not investment advice and produces no real orders.*
