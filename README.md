@@ -8,7 +8,7 @@
 | | |
 |---|---|
 | ▶ **Interactive demo** | **[quorum-ai.streamlit.app](https://quorum-ai.streamlit.app/)** *(replay terminal — no keys, can't drain credits)* |
-| 🎬 **Demo video** | `<VIDEO_URL>` |
+| 🎬 **Demo video** | **[Watch on YouTube](https://youtu.be/-wtIaQq2Vcw)** |
 | 📊 **Pitch deck** | **[Quorum-Deck.pdf](docs/Quorum-Deck.pdf)** |
 
 ---
