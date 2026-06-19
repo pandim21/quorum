@@ -2,11 +2,11 @@
   "ticker": "AAPL",
   "company": "Apple Inc.",
   "source": "Yahoo Finance (yfinance) + curated risk dossier",
-  "fetched_at": "2026-06-16T03:57:41Z",
+  "fetched_at": "2026-06-18T17:51:47Z",
   "snapshot": {
     "sub_industry": "Consumer Electronics",
-    "market_cap_usd_bn": 4353.6,
-    "fwd_pe": 30.9
+    "market_cap_usd_bn": 4371.7,
+    "fwd_pe": 31.0
   },
   "key_financials": {
     "revenue_ttm_usd_bn": 451.4,
@@ -16,7 +16,7 @@
     "net_income_ttm_usd_bn": 122.6,
     "fcf_ttm_usd_bn": 101.1,
     "net_debt_usd_bn": 16.2,
-    "ev_ebitda": 27.3
+    "ev_ebitda": 27.6
   },
   "recent_developments": [
     {
@@ -39,20 +39,20 @@
   "data_gaps": [],
   "live_headlines": [
     {
-      "headline": "Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them",
-      "so_what": "Watch this one key metric on the \"Magnificent Seven\" names."
+      "headline": "Intel stock soars on reported Apple deal as turnaround continues to pay off",
+      "so_what": "Intel will build chips for Apple, President Trump wrote in a Truth Social post."
     },
     {
-      "headline": "SpaceX Market Cap Breaches $2.5 Trillion: Goes Past Tesla, TSMC And Broadcom",
-      "so_what": "SpaceX stock jumped close to 20% on Monday, hitting a market cap of $2.52 trillion, outshining TSMC."
+      "headline": "Stock Market Today, June 18: Intel Surges As Market Gains on U.S.-Iran Agreement",
+      "so_what": "On June 18, 2026, investors welcomed U.S.-Iran progress, helping indexes overcome yesterday's rate hike fears."
     },
     {
-      "headline": "Standard Chartered Says UNI Could Hit $100 as Wall Street Moves Onchain",
-      "so_what": "Standard Chartered has opened coverage of Uniswap with one of the most aggressive Wall Street forecasts yet for a m..."
+      "headline": "Why Direxion Daily Semiconductor Bull 3X ETF Jumped 20% Today",
+      "so_what": "A social media post from President Trump sent chip stocks soaring. The Direxion Daily Semiconductor Bull 3X ETF led the charge, as expected."
     },
     {
-      "headline": "With Roku Stock Near Highs, Is It Worth It?",
-      "so_what": "The streaming giant's high-margin advertising business is firing on all cylinders, but you have to weigh that against a money-losing device segment and a premium price tag."
+      "headline": "Update: US Equity Indexes Jump as Crude Oil Heads for Pre-War Levels Ahead of Iran Reopening Hormuz Chokepoint",
+      "so_what": "(Updates with index/price moves, macroeconomic data, and political/company news from the first parag"
     }
   ]
 }
