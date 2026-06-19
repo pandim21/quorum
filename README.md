@@ -241,6 +241,10 @@ The PM recruits the specialist / CRO / auditor from there. Approve with `@Portfo
 
 Python · [Band SDK 1.0](https://band.ai) (LangGraph adapter) · AI/ML API (OpenAI, DeepSeek, xAI, Google) · Featherless (open-weight Qwen) · Streamlit. Secrets live in `.env` / `agent_config.yaml` and are git-ignored.
 
+## License
+
+Released under the **[MIT License](LICENSE)** — © 2026 Panagiotis Angelos Dimitrelis.
+
 ---
 
 *Quorum is an illustrative demonstration of a multi-agent governance workflow. It pulls live fundamentals from Yahoo Finance at run time (cached for resilience); this replay shows committed snapshots from committee runs on 15–16 June 2026. It is not investment advice and produces no real orders.*
